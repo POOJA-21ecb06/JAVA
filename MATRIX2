@@ -1,0 +1,23 @@
+//WITHOUT USING ARRAY
+import java.util.*;
+class noarray {
+ public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n=sc.nextInt();
+int k=n;
+int count=0;
+for(int i=k;i<=n*n;i=i+n){
+    count=0;
+    for(int j=i;j>=1;j--){
+        count++;
+        if(count<=n){
+            System.out.print(j+" ");
+        }else{
+            break;
+        }
+}
+System.out.println(" ");
+}
+
+}
+}

@@ -1,0 +1,20 @@
+//MID VALUE OF EACH ELEMENT
+import java.util.*;
+public class mid{
+ public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n=sc.nextInt();
+int total=0;
+String str[]=new String[n];
+for(int i=0;i<n;i++){
+    str[i]=sc.next();
+    int len=str[i].length();
+    char ch[]=str[i].toCharArray();
+    int l=(len/2);
+    int value=ch[l]-'0';
+    total =total+value;
+    
+}
+System.out.print(total);
+}
+}

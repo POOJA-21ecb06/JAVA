@@ -1,0 +1,34 @@
+import java.util.*;
+class median {
+ public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int arr[]=new int[n];
+int count=0;
+for(int i=0;i<n;i++){
+    arr[i]=sc.nextInt();
+}
+int j=0;
+for(int i=arr[j];i<=arr[n-1];i++){
+    count++;
+    }
+int arrc[]=new int[count];  
+ int k=0;
+for(int i=arr[j];i<=arr[n-1];i++){
+     arrc[k]=i;
+     k++;
+}
+for(int i=0;i<n;i++){
+for(int ll=0;ll<count;ll++){
+    if(arr[i]==arrc[ll]){
+        arrc[ll]=0;
+    }
+ }
+}
+int countt=0;
+for(int p=0;p<count;p++){
+    if(arrc[p]!=0){
+            countt++;
+    }
+}
+ 
